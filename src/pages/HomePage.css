@@ -1,0 +1,56 @@
+.homepage {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.homepage__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.homepage__header h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+}
+
+.book-list {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+@media (max-width: 1024px) {
+  .book-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .book-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.loader,
+.error-message {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 60px 20px;
+  color: #7f8c8d;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  border: 1px solid #f1948a;
+  border-radius: 8px;
+}
+
+.all-results-loaded {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7f8c8d;
+  font-style: italic;
+}
