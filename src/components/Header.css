@@ -28,3 +28,7 @@
   color: #3498db;
   border-bottom: 2px solid #3498db;
 }
+
+#root {
+  width: 100%;
+}
